@@ -32,7 +32,6 @@ exports.getUserWithEmail = getUserWithEmail;
  * @return {Promise<{}>} A promise to the user.
  */
 const getUserWithId = function(id) {
-  let userId = id. toLowerCase();
   return pool.query(`
   SELECT * FROM users
   WHERE users.id = $1
